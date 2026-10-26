@@ -1,260 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr. Devi Bhakta Devkota - Executive Profile</title>
-    <style>
-        :root {
-            --primary-color: #1e3a8a;
-            --secondary-color: #3b82f6;
-            --background-color: #f8fafc;
-            --text-color: #1e293b;
-            --card-bg: #ffffff;
-            --border-color: #e2e8f0;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            text-align: center;
-            padding: 2.5rem 1rem;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-        }
-
-        header p {
-            margin: 0.5rem 0 0;
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        /* Navigation Tabs */
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav button {
-            background: none;
-            border: none;
-            padding: 1rem 2rem;
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--text-color);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border-bottom: 3px solid transparent;
-        }
-
-        nav button:hover, nav button.active {
-            color: var(--secondary-color);
-            border-bottom-color: var(--secondary-color);
-            background-color: #f1f5f9;
-        }
-
-        /* Main Container */
-        main {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        .tab-content {
-            display: none;
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-            border: 1px solid var(--border-color);
-        }
-
-        .tab-content.active {
-            display: block;
-            animation: fadeIn 0.4s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(5px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 0.5rem;
-            margin-top: 0;
-        }
-
-        .card {
-            background: #f8fafc;
-            border-left: 4px solid var(--secondary-color);
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border-radius: 0 6px 6px 0;
-        }
-
-        .card h3 {
-            margin: 0 0 0.5rem 0;
-            color: var(--primary-color);
-            font-size: 1.1rem;
-        }
-
-        ul {
-            padding-left: 1.2rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-info p {
-            font-size: 1.1rem;
-            margin: 0.8rem 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            color: #64748b;
-            font-size: 0.9rem;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Devi Bhakta Devkota | Academic Leader &amp; IT Consultant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6f9;--surface:#fff;--ink:#14213d;--mute:#51607a;--line:#d5dbe6;--accent:#b3122f;--accent-ink:#fff;--peak:#14213d}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1626;--surface:#16213a;--ink:#eef2f9;--mute:#a3b1c9;--line:#2b3a5a;--accent:#e8566e;--accent-ink:#0e1626;--peak:#eef2f9}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 "Work Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Spectral,Georgia,serif;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.2rem,6vw,3.8rem);font-weight:700}
+h2{font-size:1.8rem}
+h3{font-size:1.25rem}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+header{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.bar{max-width:1000px;margin:auto;padding:.6rem 1.25rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;justify-content:space-between}
+.brand{font:700 1.2rem Spectral,serif}
+nav{display:flex;gap:.25rem}
+nav button{font:500 1rem "Work Sans",sans-serif;background:none;border:0;color:var(--mute);padding:.6rem .9rem;cursor:pointer;border-bottom:3px solid transparent}
+nav button[aria-selected=true]{color:var(--ink);border-bottom-color:var(--accent)}
+nav button:hover{color:var(--ink)}
+main{max-width:1000px;margin:auto;padding:2.5rem 1.25rem 4rem}
+section[hidden]{display:none}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:2rem;align-items:center}
+.hero p.lead{font-size:1.2rem;color:var(--mute);max-width:34em}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:6px;text-decoration:none;font-weight:600;background:var(--accent);color:var(--accent-ink);border:2px solid var(--accent);cursor:pointer;font-family:inherit;font-size:1rem}
+.btn.alt{background:none;color:var(--ink);border-color:var(--line)}
+.peaks{width:100%;height:auto}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:3rem 0 2rem;padding:0;list-style:none}
+.stats li{border-left:4px solid var(--accent);padding-left:.9rem}
+.stats b{font:700 2rem Spectral,serif;display:block}
+.stats span{color:var(--mute);font-size:.95rem}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+.pillar{border-top:1px solid var(--line);padding-top:1rem}
+.pillar p{margin:0;color:var(--mute)}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:1.5rem;margin-bottom:1.25rem}
+.proj .meta{color:var(--mute);font-size:.95rem;margin:0 0 .75rem}
+.proj ul{margin:.5rem 0 0;padding-left:1.2rem}
+.tag{display:inline-block;font-size:.85rem;border:1px solid var(--line);border-radius:99px;padding:.1rem .7rem;margin:.6rem .4rem 0 0;color:var(--mute)}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem}
+.fig svg{width:100%;height:auto;display:block}
+.fig p{color:var(--mute);margin:.75rem 0 0}
+svg text{fill:var(--ink);font-family:"Work Sans",sans-serif}
+svg .m{fill:var(--mute)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.contact dl{margin:0}.contact dt{color:var(--mute);font-size:.9rem;margin-top:1rem}.contact dd{margin:0;font-weight:500;overflow-wrap:anywhere}
+form{display:grid;gap:.9rem}
+label{display:grid;gap:.3rem;font-weight:500}
+input,textarea{font:inherit;padding:.65rem;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink)}
+footer{text-align:center;color:var(--mute);font-size:.9rem;padding:1.5rem}
+@media(max-width:720px){.hero,.contact{grid-template-columns:1fr}.hero svg{order:-1;max-width:320px}}
+</style>
 </head>
 <body>
-
-    <header>
-        <h1>Mr. Devi Bhakta Devkota</h1>
-        <p>Visionary Academic Leader | IT & Management Consultant | Institutional Architect[cite: 1]</p>
-    </header>
-
-    <nav>
-        <button class="tab-btn active" onclick="switchTab(event, 'home')">Home</button>
-        <button class="tab-btn clicked" onclick="switchTab(event, 'projects')">Projects</button>
-        <button class="tab-btn" onclick="switchTab(event, 'graphics')">Graphics</button>
-        <button class="tab-btn" onclick="switchTab(event, 'contact')">Contact</button>
+<header>
+  <div class="bar">
+    <div class="brand">Devi Bhakta Devkota</div>
+    <nav role="tablist" aria-label="Site sections">
+      <button role="tab" id="t-home" aria-controls="home" aria-selected="true">Home</button>
+      <button role="tab" id="t-projects" aria-controls="projects" aria-selected="false">Projects</button>
+      <button role="tab" id="t-graphics" aria-controls="graphics" aria-selected="false">Graphics</button>
+      <button role="tab" id="t-contact" aria-controls="contact" aria-selected="false">Contact</button>
     </nav>
+  </div>
+</header>
 
-    <main>
-        <!-- HOME TAB -->
-        <div id="home" class="tab-content active">
-            <h2>Executive Summary</h2>
-            <p>Strategic Executive Leader with 22+ years of transformative experience in higher education & business development[cite: 1]. A multi-time Founder Principal with a proven track record of architecting world-class institutions from the blueprint up, ensuring academic excellence, financial sustainability, & UGC-QAA accreditation[cite: 1].</p>
-            
-            <h2>Core Leadership Pillars</h2>
-            <ul>
-                <li><strong>Institutional Architecture:</strong> Specialized in founding, scaling, & licensing colleges with a focus on national & international accreditation standards[cite: 1].</li>
-                <li><strong>The "Triple Synthesis":</strong> Expert integration of Academic Governance, IT Infrastructure, & Strategic Project Management (PRINCE2)[cite: 1].</li>
-                <li><strong>Future-Ready Curriculum:</strong> Strategic oversight of cutting-edge programs, including B.Tech. in AI, B.E. Biomedical, & B.E. Computer Engineering[cite: 1].</li>
-                <li><strong>Global Pedagogy:</strong> Implementing world-class teaching frameworks (France/Nepal) to bridge the divide between higher education & industrial demand[cite: 1].</li>
-            </ul>
-        </div>
+<main>
+<!-- HOME -->
+<section id="home" role="tabpanel" aria-labelledby="t-home">
+  <div class="hero">
+    <div>
+      <h1>Building colleges that turn vision into results.</h1>
+      <p class="lead">Devi Bhakta Devkota is an academic leader, IT and management consultant, and multi-time founder principal with 22+ years in higher education and business development.</p>
+      <div class="btns">
+        <button class="btn" data-go="projects">See my projects</button>
+        <button class="btn alt" data-go="contact">Get in touch</button>
+      </div>
+    </div>
+    <svg class="peaks" viewBox="0 0 320 220" role="img" aria-label="Stylised Himalayan peaks">
+      <circle cx="250" cy="48" r="22" fill="var(--accent)"/>
+      <path d="M0 200 L70 90 L105 140 L170 30 L240 150 L270 110 L320 200Z" fill="var(--peak)" opacity=".9"/>
+      <path d="M170 30 L148 70 L165 62 L172 78 L186 60 L200 72Z" fill="var(--bg)"/>
+      <path d="M0 200 H320" stroke="var(--line)" stroke-width="2"/>
+    </svg>
+  </div>
 
-        <!-- PROJECTS TAB -->
-        <div id="projects" class="tab-content">
-            <h2>Professional Leadership & Experience</h2>
-            
-            <div class="card">
-                <h3>Head of IT & Business Development | NIET College</h3>
-                <p><em>Kupondole, Lalitpur | June 2024 - Present</em>[cite: 1]</p>
-                <ul>
-                    <li>Architecting a strategic roadmap for this UGC-QAA-certified institution, aligning academic output with global engineering trends[cite: 1].</li>
-                    <li>Directing curriculum design & operational excellence for flagship programs: B.Tech. in AI, B.E. Biomedical, & B.E. Computer Engineering[cite: 1].</li>
-                </ul>
-            </div>
+  <ul class="stats">
+    <li><b>22+</b><span>years in higher education</span></li>
+    <li><b>5,000+</b><span>students mentored</span></li>
+    <li><b>3</b><span>institutions founded or launched</span></li>
+    <li><b>2</b><span>years in France: Airbus and Skema</span></li>
+  </ul>
 
-            <div class="card">
-                <h3>Founding Academic Director | VS International College</h3>
-                <p><em>Kathmandu, Nepal | August 2023 - June 2024</em>[cite: 1, 2]</p>
-                <ul>
-                    <li>Spearheaded the end-to-end establishment of academic operations, faculty recruitment, and leadership structures[cite: 1, 2].</li>
-                    <li>Directed curriculum lifecycle and student success metrics for MBS, BBM, BCA, BSW, and BBS programs under Tribhuvan University[cite: 1, 2].</li>
-                </ul>
-            </div>
+  <h2>What I do</h2>
+  <div class="cols">
+    <div class="pillar"><h3>Institutional architecture</h3><p>Found, scale and license colleges to national and international accreditation standards, including UGC-QAA.</p></div>
+    <div class="pillar"><h3>The triple synthesis</h3><p>Academic governance, IT infrastructure and PRINCE2 project management working as one system.</p></div>
+    <div class="pillar"><h3>Future-ready curriculum</h3><p>Oversight of programs such as B.Tech. in AI, B.E. Biomedical and B.E. Computer Engineering.</p></div>
+    <div class="pillar"><h3>Global pedagogy</h3><p>Teaching frameworks from France and Nepal that connect higher education to industry demand.</p></div>
+  </div>
 
-            <div class="card">
-                <h3>Founder Principal | Sagarmatha (SM) College Group</h3>
-                <p><em>Kathmandu, Nepal | January 2017 - May 2023</em>[cite: 2]</p>
-                <ul>
-                    <li>Spearheaded full-scale establishment of degree programs including MBS, BBM, BCA, BSW, & BBS[cite: 2].</li>
-                    <li>Orchestrated growth of an ICT-enabled Business School offering BBA & NEB (+2) Science, Humanities & Management[cite: 2].</li>
-                </ul>
-            </div>
-        </div>
+  <h2 style="margin-top:3rem">Education and credentials</h2>
+  <div class="cols">
+    <div><h3>Education</h3><p>MSc Project and Program Management &amp; Business Development, Skema Business School, Paris (2016)<br>MBA-Finance, Sikkim Manipal University (2011)<br>MSc IT, Sikkim Manipal University (2009)<br>BCA, MCU Bhopal (2004)</p></div>
+    <div><h3>Certifications</h3><p>PRINCE2 Foundation, CMMi, OPM3, and certified member of PMI.<br>Languages: English (working), Nepali (mother tongue), Hindi (fluent), French (beginner).</p></div>
+  </div>
+</section>
 
-        <!-- GRAPHICS TAB -->
-        <div id="graphics" class="tab-content">
-            <h2>Graphics & Technical Visual Innovations</h2>
-            <p>Showcasing software design, visual reporting tools, and structural graphical programming expertise from international technical assignments.</p>
+<!-- PROJECTS -->
+<section id="projects" role="tabpanel" aria-labelledby="t-projects" hidden>
+  <h2>Projects and roles</h2>
+  <article class="proj">
+    <h3>NIET College: Head of IT &amp; Business Development</h3>
+    <p class="meta">Kupondole, Lalitpur · June 2024 to present · Affiliated to PU</p>
+    <ul>
+      <li>Building a strategic roadmap for a UGC-QAA certified institution, aligning academic output with global engineering trends.</li>
+      <li>Directing curriculum and operations for B.Tech. in AI, B.E. Biomedical and B.E. Computer Engineering.</li>
+      <li>Secured industry partnerships that raised the college's reputation and student placement rates.</li>
+    </ul>
+    <span class="tag">Curriculum design</span><span class="tag">Accreditation</span><span class="tag">Industry partnerships</span>
+  </article>
+  <article class="proj">
+    <h3>VS International College: Founding Academic Director</h3>
+    <p class="meta">Kathmandu · August 2023 to June 2024 · Affiliated to TU</p>
+    <ul>
+      <li>Set up academic operations, faculty recruitment and leadership structures for the inaugural year.</li>
+      <li>Directed the curriculum lifecycle and student success metrics for MBS, BBM, BCA, BSW and BBS.</li>
+      <li>Built a high-performance academic culture that raised teaching standards and student skill outcomes.</li>
+    </ul>
+    <span class="tag">Launch strategy</span><span class="tag">Faculty hiring</span>
+  </article>
+  <article class="proj">
+    <h3>Sagarmatha (SM) College Group: Founder Principal</h3>
+    <p class="meta">Kathmandu · January 2017 to May 2023</p>
+    <ul>
+      <li><b>Sagarmatha College for Higher Studies (TU):</b> established and led MBS, BBM, BCA, BSW and BBS programs.</li>
+      <li><b>Sagarmatha Multiple College (PU &amp; NEB):</b> grew an ICT-enabled business school offering BBA and NEB (+2) in Science, Humanities and Management.</li>
+      <li>Advised on market entry, revenue generation and adding industry-relevant ICT tools to the curriculum.</li>
+    </ul>
+    <span class="tag">Founding</span><span class="tag">ICT in education</span><span class="tag">Revenue growth</span>
+  </article>
+  <article class="proj">
+    <h3>Airbus Group, Toulouse: 3D Visual Reporting Tool</h3>
+    <p class="meta">France · 2014 to 2016</p>
+    <ul><li>Developed a 3D visual reporting tool in Java at Airbus headquarters to track real-time assembly of the A350 XWB on the final assembly line.</li></ul>
+    <span class="tag">Java</span><span class="tag">3D visualisation</span>
+  </article>
+  <article class="proj">
+    <h3>Skema Business School, Paris: Adjunct Lecturer</h3>
+    <p class="meta">France · MSc International Management</p>
+    <ul><li>Taught advanced analytics and data management frameworks. Also wrote technical tests for Praditus SAS covering C#, PHP5, Java, HTML5 and Six Sigma.</li></ul>
+    <span class="tag">Teaching</span><span class="tag">Data management</span>
+  </article>
+  <article class="proj">
+    <h3>Guest Faculty and Subject Matter Expert</h3>
+    <p class="meta">Kathmandu · October 2004 to June 2024</p>
+    <ul><li>Twenty years of lectures across BCA, BBA, BIM, BIT and BBM at Padma Kanya, NAMI, MBM, Premier, Softwarica and 10+ other institutions, plus visiting consultancy on IT and management curricula.</li></ul>
+  </article>
+</section>
 
-            <div class="card">
-                <h3>3D Visual Reporting Tool Development</h3>
-                <p><em>Airbus Group | Toulouse, France (July 2014 - August 2016)</em>[cite: 2]</p>
-                <ul>
-                    <li>Developed a groundbreaking 3D Visual Reporting Tool (Java) at Airbus Headquarters for tracking the real-time assembly of A350XWB Aircraft (FAL)[cite: 2].</li>
-                </ul>
-            </div>
+<!-- GRAPHICS -->
+<section id="graphics" role="tabpanel" aria-labelledby="t-graphics" hidden>
+  <h2>Career in graphics</h2>
 
-            <div class="card">
-                <h3>Technical Content & Standards Design</h3>
-                <p><em>Praditus SAS | Paris, France</em>[cite: 2]</p>
-                <ul>
-                    <li>Acted as Technical Test Writer for global technical recruitment assessing engineering competencies across C#, PHP5, Java, HTML5, and Six Sigma frameworks[cite: 2].</li>
-                </ul>
-            </div>
-        </div>
+  <div class="fig">
+    <h3>Timeline, 2004 to 2026</h3>
+    <svg viewBox="0 0 700 230" role="img" aria-label="Career timeline from 2004 to 2026">
+      <g font-size="12">
+        <text x="0" y="22" class="m">Guest faculty</text>
+        <rect x="110" y="10" width="520" height="16" rx="3" fill="var(--mute)" opacity=".45"/>
+        <text x="0" y="62" class="m">France</text>
+        <rect x="316" y="50" width="48" height="16" rx="3" fill="var(--ink)"/>
+        <text x="0" y="102" class="m">Sagarmatha</text>
+        <rect x="415" y="90" width="108" height="16" rx="3" fill="var(--accent)"/>
+        <text x="0" y="142" class="m">VS International</text>
+        <rect x="537" y="130" width="14" height="16" rx="3" fill="var(--accent)"/>
+        <text x="0" y="182" class="m">NIET College</text>
+        <rect x="570" y="170" width="130" height="16" rx="3" fill="var(--accent)"/>
+        <line x1="110" y1="200" x2="700" y2="200" stroke="var(--line)"/>
+        <text x="110" y="220">2004</text><text x="294" y="220">2014</text><text x="410" y="220">2017</text><text x="530" y="220">2023</text><text x="650" y="220">2026</text>
+      </g>
+    </svg>
+    <p>Teaching ran alongside every other role, with founding and executive posts layered on top.</p>
+  </div>
 
-        <!-- CONTACT TAB -->
-        <div id="contact" class="tab-content">
-            <h2>Get in Touch</h2>
-            <p>Feel free to reach out for institutional consultation, leadership opportunities, or professional networking.</p>
-            
-            <div class="contact-info">
-                <p><strong>Location:</strong> Kathmandu, Nepal[cite: 1]</p>
-                <p><strong>Phone:</strong> +977 9851218995[cite: 1]</p>
-                <p><strong>Email:</strong> <a href="mailto:dbgorkha@gmail.com">dbgorkha@gmail.com</a>[cite: 1]</p>
-                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/devkotadevibhaktasitu" target="_blank">linkedin.com/in/devkotadevibhaktasitu</a>[cite: 1]</p>
-            </div>
-        </div>
-    </main>
+  <div class="fig">
+    <h3>The triple synthesis</h3>
+    <svg viewBox="0 0 700 280" role="img" aria-label="Three overlapping circles: Academic Governance, IT Infrastructure, Project Management">
+      <g fill-opacity=".35">
+        <circle cx="290" cy="110" r="90" fill="var(--accent)"/>
+        <circle cx="410" cy="110" r="90" fill="var(--peak)"/>
+        <circle cx="350" cy="190" r="90" fill="var(--mute)"/>
+      </g>
+      <g font-size="14" text-anchor="middle">
+        <text x="235" y="95">Academic</text><text x="235" y="113">governance</text>
+        <text x="465" y="95">IT</text><text x="465" y="113">infrastructure</text>
+        <text x="350" y="235">Project management</text><text x="350" y="253" class="m">PRINCE2</text>
+        <text x="350" y="150" font-weight="600">Results</text>
+      </g>
+    </svg>
+  </div>
 
-    <footer>
-        <p>&copy; 2026 Mr. Devi Bhakta Devkota. All rights reserved.</p>
-    </footer>
+  <div class="fig">
+    <h3>Programs overseen</h3>
+    <svg viewBox="0 0 700 240" role="img" aria-label="Bar chart of programs by affiliation">
+      <g font-size="13">
+        <text x="0" y="30">TU programs</text><rect x="130" y="14" width="400" height="22" rx="3" fill="var(--accent)"/><text x="540" y="31">MBS, BBM, BCA, BSW, BBS</text>
+        <text x="0" y="80">PU programs</text><rect x="130" y="64" width="160" height="22" rx="3" fill="var(--peak)"/><text x="300" y="81">BBA, B.Tech. AI, B.E. x2</text>
+        <text x="0" y="130">NEB (+2)</text><rect x="130" y="114" width="120" height="22" rx="3" fill="var(--mute)"/><text x="260" y="131">Science, Humanities, Management</text>
+      </g>
+    </svg>
+    <p>Bar length is illustrative of the number of programs per affiliation, not enrolment.</p>
+  </div>
+</section>
 
-    <script>
-        function switchTab(evt, tabName) {
-            const contents = document.getElementsByClassName("tab-content");
-            for (let i = 0; i < contents.length; i++) {
-                contents[i].classList.remove("active");
-            }
+<!-- CONTACT -->
+<section id="contact" role="tabpanel" aria-labelledby="t-contact" hidden>
+  <h2>Contact</h2>
+  <div class="contact">
+    <dl>
+      <dt>Location</dt><dd>Kathmandu, Nepal</dd>
+      <dt>Phone</dt><dd><a href="tel:+9779851218995">+977 9851218995</a></dd>
+      <dt>Email</dt><dd><a href="mailto:dbgorkha@gmail.com">dbgorkha@gmail.com</a></dd>
+      <dt>LinkedIn</dt><dd><a href="https://linkedin.com/in/devkotadevibhaktasitu" target="_blank" rel="noopener">linkedin.com/in/devkotadevibhaktasitu</a></dd>
+    </dl>
+    <form id="mailform">
+      <label>Your name<input name="n" required></label>
+      <label>Your email<input name="e" type="email" required></label>
+      <label>Message<textarea name="m" rows="5" required></textarea></label>
+      <button class="btn" type="submit">Open in my email app</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer>© <span id="yr"></span> Devi Bhakta Devkota</footer>
 
-            const buttons = document.getElementsByClassName("tab-btn");
-            for (let i = 0; i < buttons.length; i++) {
-                buttons[i].classList.remove("active");
-            }
-
-            document.getElementById(tabName).classList.add("active");
-            evt.currentTarget.classList.add("active");
-        }
-    </script>
-
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function show(id){
+    if(!document.getElementById(id)) id='home';
+    tabs.forEach(function(t){t.setAttribute('aria-selected',t.id==='t-'+id)});
+    ['home','projects','graphics','contact'].forEach(function(s){document.getElementById(s).hidden=(s!==id)});
+    if(location.hash.slice(1)!==id) history.replaceState(null,'','#'+id);
+    window.scrollTo(0,0);
+  }
+  tabs.forEach(function(t){
+    t.addEventListener('click',function(){show(t.id.slice(2))});
+    t.addEventListener('keydown',function(e){
+      var i=tabs.indexOf(t),n=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:null;
+      if(n===null)return; n=(n+tabs.length)%tabs.length; tabs[n].focus(); show(tabs[n].id.slice(2));
+    });
+  });
+  [].forEach.call(document.querySelectorAll('[data-go]'),function(b){b.addEventListener('click',function(){show(b.dataset.go)})});
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1))});
+  document.getElementById('mailform').addEventListener('submit',function(e){
+    e.preventDefault();var f=e.target;
+    location.href='mailto:dbgorkha@gmail.com?subject='+encodeURIComponent('Website enquiry from '+f.n.value)+'&body='+encodeURIComponent(f.m.value+'\n\nReply to: '+f.e.value);
+  });
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  show(location.hash.slice(1)||'home');
+})();
+</script>
 </body>
 </html>
