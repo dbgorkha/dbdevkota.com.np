@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Devi Bhakta Devkota - Executive Profile</title>
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #3b82f6;
+            --background-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation Tabs */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav button {
+            background: none;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        nav button:hover, nav button.active {
+            color: var(--secondary-color);
+            border-bottom-color: var(--secondary-color);
+            background-color: #f1f5f9;
+        }
+
+        /* Main Container */
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .tab-content {
+            display: none;
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            border: 1px solid var(--border-color);
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .card {
+            background: #f8fafc;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .card h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            margin: 0.8rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mr. Devi Bhakta Devkota</h1>
+        <p>Visionary Academic Leader | IT & Management Consultant | Institutional Architect[cite: 1]</p>
+    </header>
+
+    <nav>
+        <button class="tab-btn active" onclick="switchTab(event, 'home')">Home</button>
+        <button class="tab-btn clicked" onclick="switchTab(event, 'projects')">Projects</button>
+        <button class="tab-btn" onclick="switchTab(event, 'graphics')">Graphics</button>
+        <button class="tab-btn" onclick="switchTab(event, 'contact')">Contact</button>
+    </nav>
+
+    <main>
+        <!-- HOME TAB -->
+        <div id="home" class="tab-content active">
+            <h2>Executive Summary</h2>
+            <p>Strategic Executive Leader with 22+ years of transformative experience in higher education & business development[cite: 1]. A multi-time Founder Principal with a proven track record of architecting world-class institutions from the blueprint up, ensuring academic excellence, financial sustainability, & UGC-QAA accreditation[cite: 1].</p>
+            
+            <h2>Core Leadership Pillars</h2>
+            <ul>
+                <li><strong>Institutional Architecture:</strong> Specialized in founding, scaling, & licensing colleges with a focus on national & international accreditation standards[cite: 1].</li>
+                <li><strong>The "Triple Synthesis":</strong> Expert integration of Academic Governance, IT Infrastructure, & Strategic Project Management (PRINCE2)[cite: 1].</li>
+                <li><strong>Future-Ready Curriculum:</strong> Strategic oversight of cutting-edge programs, including B.Tech. in AI, B.E. Biomedical, & B.E. Computer Engineering[cite: 1].</li>
+                <li><strong>Global Pedagogy:</strong> Implementing world-class teaching frameworks (France/Nepal) to bridge the divide between higher education & industrial demand[cite: 1].</li>
+            </ul>
+        </div>
+
+        <!-- PROJECTS TAB -->
+        <div id="projects" class="tab-content">
+            <h2>Professional Leadership & Experience</h2>
+            
+            <div class="card">
+                <h3>Head of IT & Business Development | NIET College</h3>
+                <p><em>Kupondole, Lalitpur | June 2024 - Present</em>[cite: 1]</p>
+                <ul>
+                    <li>Architecting a strategic roadmap for this UGC-QAA-certified institution, aligning academic output with global engineering trends[cite: 1].</li>
+                    <li>Directing curriculum design & operational excellence for flagship programs: B.Tech. in AI, B.E. Biomedical, & B.E. Computer Engineering[cite: 1].</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Founding Academic Director | VS International College</h3>
+                <p><em>Kathmandu, Nepal | August 2023 - June 2024</em>[cite: 1, 2]</p>
+                <ul>
+                    <li>Spearheaded the end-to-end establishment of academic operations, faculty recruitment, and leadership structures[cite: 1, 2].</li>
+                    <li>Directed curriculum lifecycle and student success metrics for MBS, BBM, BCA, BSW, and BBS programs under Tribhuvan University[cite: 1, 2].</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Founder Principal | Sagarmatha (SM) College Group</h3>
+                <p><em>Kathmandu, Nepal | January 2017 - May 2023</em>[cite: 2]</p>
+                <ul>
+                    <li>Spearheaded full-scale establishment of degree programs including MBS, BBM, BCA, BSW, & BBS[cite: 2].</li>
+                    <li>Orchestrated growth of an ICT-enabled Business School offering BBA & NEB (+2) Science, Humanities & Management[cite: 2].</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- GRAPHICS TAB -->
+        <div id="graphics" class="tab-content">
+            <h2>Graphics & Technical Visual Innovations</h2>
+            <p>Showcasing software design, visual reporting tools, and structural graphical programming expertise from international technical assignments.</p>
+
+            <div class="card">
+                <h3>3D Visual Reporting Tool Development</h3>
+                <p><em>Airbus Group | Toulouse, France (July 2014 - August 2016)</em>[cite: 2]</p>
+                <ul>
+                    <li>Developed a groundbreaking 3D Visual Reporting Tool (Java) at Airbus Headquarters for tracking the real-time assembly of A350XWB Aircraft (FAL)[cite: 2].</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Technical Content & Standards Design</h3>
+                <p><em>Praditus SAS | Paris, France</em>[cite: 2]</p>
+                <ul>
+                    <li>Acted as Technical Test Writer for global technical recruitment assessing engineering competencies across C#, PHP5, Java, HTML5, and Six Sigma frameworks[cite: 2].</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CONTACT TAB -->
+        <div id="contact" class="tab-content">
+            <h2>Get in Touch</h2>
+            <p>Feel free to reach out for institutional consultation, leadership opportunities, or professional networking.</p>
+            
+            <div class="contact-info">
+                <p><strong>Location:</strong> Kathmandu, Nepal[cite: 1]</p>
+                <p><strong>Phone:</strong> +977 9851218995[cite: 1]</p>
+                <p><strong>Email:</strong> <a href="mailto:dbgorkha@gmail.com">dbgorkha@gmail.com</a>[cite: 1]</p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/devkotadevibhaktasitu" target="_blank">linkedin.com/in/devkotadevibhaktasitu</a>[cite: 1]</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mr. Devi Bhakta Devkota. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function switchTab(evt, tabName) {
+            const contents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < contents.length; i++) {
+                contents[i].classList.remove("active");
+            }
+
+            const buttons = document.getElementsByClassName("tab-btn");
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("active");
+            }
+
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+
+</body>
+</html>
